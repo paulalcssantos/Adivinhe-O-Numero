@@ -1,0 +1,159 @@
+/********Global*********/
+
+/*declaração de variáveis*/
+:root{
+    --white: #fafafa;
+    --pink: #C71585;
+    --lightPink: #FF69B4;
+    --grey: #C0C0C0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+/********Header********/
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    background-color: var(--pink);
+}
+
+header a h1{
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+/*********Container********/
+
+.container{
+    width: 100%;
+    height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: linear-gradient(#000,#1C1C1C);
+}
+
+/*********Form**********/
+
+.container form{
+    background: var(--lightPink);
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2rem;
+    margin-top: 5%;
+    border-radius: 0.5rem;
+}
+
+.container form label{
+    color: black;
+    font: 0.3rem;
+    font-weight: 500;
+}
+
+.container form input{
+    border: 0;
+    outline: 0;
+    margin: 5% 0px; /*5% (embaixo e em cima) 0px (esquerda e direita)*/
+    padding: 15px;
+    font: 1.5rem;
+    font-weight: 400;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container form input:focus{
+    box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container form button{
+    cursor: pointer;
+    margin-top: 1%;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background: var(--pink);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.container form button:hover{
+    color: var(--pink);
+    background: var(--white);
+}
+
+/*******Section********/
+
+.container .result-box{
+    margin-top: 3%;
+    background: var(--white);
+    width: 40%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    color: var(--pink);
+}
+
+.container .result-box h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1% 0px;
+}
+
+.container .result-box span{
+    font-size: 1rem;
+    font-weight: 350;
+}
+
+/********Btn Jogar de novo********/
+
+.container #btnRestart {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: var(--white);
+    color: var(--pink);
+    padding: 1rem;
+    margin-top: 2%;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+
+    display: none;
+}
+
+.container #btnRestart:hover{
+    background: var(--pink);
+    color: var(--white);
+}
+
+footer{
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    background: var(--pink);
+}
+
+footer p{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 300;
+}
